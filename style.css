@@ -1,0 +1,148 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #232527;
+    color: #393b3d;
+    min-height: 100vh;
+}
+
+.rbx-bg {
+    display: block;
+    padding: 0;
+}
+
+/* Header */
+.rbx-header {
+    background: #232527;
+    padding: 12px 24px;
+    border-bottom: 1px solid #191a1b;
+}
+.rbx-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Wrap */
+.rbx-wrap {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 48px 20px;
+}
+
+/* Card */
+.rbx-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 32px 28px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.3);
+}
+
+.rbx-card h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #232527;
+    margin-bottom: 8px;
+}
+
+.rbx-sub {
+    font-size: 13px;
+    color: #77797b;
+    margin-bottom: 22px;
+    line-height: 1.5;
+}
+
+/* Form */
+label {
+    display: block;
+    font-size: 13px;
+    color: #232527;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    margin-top: 6px;
+    padding: 11px 12px;
+    background: #f2f4f5;
+    border: 1px solid #c3c7c9;
+    border-radius: 4px;
+    color: #232527;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .15s;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+}
+input:focus {
+    border-color: #00a2ff;
+    background: #fff;
+}
+input::placeholder { color: #a3a7a9; }
+input[readonly] {
+    background: #e8eaeb;
+    color: #77797b;
+}
+
+.rbx-btn {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    background: #00a2ff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .15s, transform .1s;
+}
+.rbx-btn:hover:not(:disabled) { background: #0090e6; }
+.rbx-btn:active:not(:disabled) { transform: scale(.99); }
+.rbx-btn:disabled { opacity: .6; cursor: wait; }
+
+/* Success */
+.rbx-success {
+    margin-top: 16px;
+    padding: 14px;
+    background: #e8f7e8;
+    border: 1px solid #b3e0b3;
+    border-radius: 4px;
+    color: #2d6a2d;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Links */
+.rbx-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #77797b;
+}
+.rbx-links a {
+    color: #00a2ff;
+    text-decoration: none;
+}
+.rbx-links a:hover { text-decoration: underline; }
+
+/* Foot */
+.rbx-foot {
+    text-align: center;
+    font-size: 11px;
+    color: #6a6c6e;
+    margin-top: 24px;
+}
+
+@media (max-width: 480px) {
+    .rbx-wrap { padding: 24px 16px; }
+    .rbx-card { padding: 24px 20px; }
+}
